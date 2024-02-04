@@ -1,0 +1,35 @@
+// Global form styles
+form {
+    max-width: 500px; // Adjust as needed
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    .nz-form-item {
+      margin-bottom: 15px;
+    }
+  }
+  
+  // Input fields
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  
+    &:focus {
+      outline: 3px solid blue; // Visible focus indicator
+    }
+  }
+  
+  // Label styles
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block; // Ensure labels are associated with fields
+  }
+  
