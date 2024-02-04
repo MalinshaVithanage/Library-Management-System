@@ -4,6 +4,6 @@ import com.inn.library.dto.SignupRequest;
 import com.inn.library.dto.UserDto;
 
 public interface AuthService {
-    UserDto createCustomer(SignupRequest signupRequest);
-    boolean hasCustomerWithEmail(String email);
+    UserDto createUser(SignupRequest signupRequest);
+//    boolean hasCustomerWithEmail(String email);
 }
