@@ -1,0 +1,48 @@
+// nz-header{
+//     display:inline-flex;
+// }
+.logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+
+  [nz-menu] {
+    line-height: 64px;
+    display: block;
+  }
+  .nav-links{
+    display: flex;
+  justify-content: flex-end;
+  }
+  [nz-button] {
+    
+    margin-top: 15px;
+    align-items: center;
+  
+    padding: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 1rem;
+    width: 100px; /* Example width (adjust as needed) */
+    height: 30px; /* Example height (adjust as needed) */
+  }
+.nav-links > :first-child { /* Target first button */
+    margin-right: 8px; /* Add spacing between buttons */
+  }
+
+
+
+  nz-footer {
+    text-align: center;
+  }
+
+  .inner-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+  }
+
