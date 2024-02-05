@@ -3,12 +3,11 @@
     width: 780px;
     background-color: white;
     background: white;
-    bax-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 0px #0000001a;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .row{
     padding: 30px;
     width: 780px;
@@ -42,8 +41,7 @@ p{
 hr{
     margin-top: 10px;
     margin-bottom: 10px;
-    
-}
+}   
 h2:hover{
     text-decoration-line: underline;
 }

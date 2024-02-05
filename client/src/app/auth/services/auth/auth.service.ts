@@ -20,10 +20,8 @@ export class AuthService {
   }
   login(loginrequest:any): Observable<any> {
     
-     console.log(loginrequest);
-    return this.http.post<[]>(BASE_URL + 'api/auth/login',loginrequest)
-    
-  }
-    
+    console.log(loginrequest);
+   return this.http.post<[]>(BASE_URL + 'api/auth/login',loginrequest)
   
+}
 }

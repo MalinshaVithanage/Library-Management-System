@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AuthService } from '../../services/auth/auth.service';
@@ -19,6 +19,8 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  authService: any;
+  snackBar: any;
   constructor(private service: AuthService, private fb:FormBuilder, private router: Router
     ){}
 
@@ -67,6 +69,5 @@ login(){
   });
   
 }
+
 }
-
-
