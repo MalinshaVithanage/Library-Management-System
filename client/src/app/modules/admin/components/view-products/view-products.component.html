@@ -1,0 +1,30 @@
+<form nz-form [formGroup]="validateForm" style="margin-top: 20px; text-align: center;" (submit)="submitForm()">
+    <input type="text" nz-input placeholder="Enter keyword to search" nzSize="large" style="width: 20%;" formControlName="title">
+    <button nz-button [nzSize]="size" nzType="primary" style="margin-left: 15px;" [disabled]="validateForm.invalid">Search</button>
+
+</form>
+<div style="background-color: #F8F8F8; min-height: 91vh;">
+    <div style="padding-top: 10px;"></div>
+    <div class="child" style="margin-top: 10px;" *ngFor="let product of products">
+        <div nz-row>
+            <div nz-col nzSpan="8">
+                <img class="profile" style="height: 130px; width: 200px; border-radius: 10px;" [src]="product.processedImg" alt="profile">
+            </div>
+            <div nz-col nzSpan="16">
+                <h2 style="cursor: pointer; color: #108ee9;">
+                    {{  product.name }}
+                </h2>   
+                <hr>
+                <h5>
+                    -Description: <b>{{product.description}}</b>
+                    -Category: <b>{{product.categoryName}}</b>
+                </h5>
+                <hr>
+                <div style="float: right;">
+                    <button nzSize="small" nz-button nzType="primary" routerLink="/admin/product/{{product.id}}">Update</button>
+                    <button style="margin-left: 10px;" nz-button nzSize="small" nzType="primary"  nzDanger (click)="deleteProduct(product.id)">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
