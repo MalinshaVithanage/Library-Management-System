@@ -22,7 +22,7 @@ public class AuthServiceImpl implements AuthService{
 
     //@PostConstruct se ejecuta despues de que se crea el bean en el contenedor de spring y despues de que se inyecten las dependencias
     public void createAdminAccount() {
-        User admin = userRepository.findByRole(UserRole.ADMIN);
+        User admin = userRepository.findByUserRole(UserRole.ADMIN);
         if(admin == null){
             User user = new User();
             user.setName("admin");
